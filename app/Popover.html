@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <title>natowebapp</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="../bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+  <!--[if lt IE 9]>
+  <script src="../bower_components/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="../bower_components/respond/dest/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+
+<!-- Small modal -->
+<button type="button" class="btn-blue" id="btn-publish"  data-toggle="modal" data-target="#bs-publish">提交</button>
+
+<div class="modal fade" id="bs-publish" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header bgcolorGray">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">提示框</h4>
+      </div>
+      <div class="modal-body">
+        <h4>提交成功!</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn-blue" data-toggle="modal" data-target="#bs-delete">删除</button>
+
+<div class="modal fade" id="addFriends" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header bgcolorGray">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">加为好友</h4>
+      </div>
+      <div class="modal-body">
+        <h4>确认删除？</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary">保存</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="../bower_components/modernizr/modernizr.js"></script>
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<script src="scripts/popover.js"></script>
+<!-- endbuild -->
+<script type="text/javascript">
+  alert(1231);
+  var wait=2;
+  function time(o) {
+    if (wait == 0) {
+      $('#bs-publish').modal('hide')
+    }
+    else { // www.jbxue.com
+      wait--;
+      setTimeout(function() {
+          time(o)
+        },
+        1000)
+    }
+  }
+  document.getElementById("btn-publish").onclick=function(){time(this);}
+</script>
+</body>
+</html>

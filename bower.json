@@ -1,0 +1,16 @@
+{
+  "name": "natowebapp",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.2.0",
+    "modernizr": "~2.8.2"
+  },
+  "devDependencies": {
+    "html5shiv": "~3.7.2",
+    "respond": "~1.4.2",
+    "yepnope": "~2.0.0",
+    "picturefill": "~2.3.0",
+    "bootstrap": "~3.3.4",
+    "jquery.event.swipe": "~0.5.4"
+  }
+}

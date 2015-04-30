@@ -1,0 +1,408 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <title>natowebapp</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="../styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="../../bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+  <!--[if lt IE 9]>
+  <script src="../../bower_components/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="../../bower_components/respond/dest/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+<div class="header">
+  <div class="head-top">
+    <div class="container">
+      <div class="row ">
+        <div class="container">
+          <div class="col-xs-6">
+            <p>欢迎您来讲课堂!</p>
+          </div>
+          <div class="col-xs-6 text-right">
+            <a href="javascript:void(0)"  data-toggle="modal" data-target="#myModal">请登录</a>
+            ｜
+            <a href="">免费注册</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#example-navbar-collapse">
+          <span class="sr-only">切换导航</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img class="img-responsive" src="../images/public/logo.png"></a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">文章资讯</a></li>
+          <li><a href="#">在线课堂</a></li>
+          <li><a href="#">讲骨堂</a></li>
+          <li><a href="#">学术会议</a></li>
+          <li><a href="#">今友社区</a></li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+          <div class="input-group">
+            <input type="text" class="form-control btn-search" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button class="btn btn-blue" type="button">搜索</button>
+                </span>
+          </div><!-- /input-group -->
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="content mb2em">
+  <div class="container">
+    <div class="userIntro mt2em">
+      <div class="row">
+        <div class="col-sm-2 col-xs-3">
+          <img class="img-responsive" src="../images/public/170170.png" alt=""/>
+        </div>
+        <div class="col-sm-10 col-xs-9">
+          <div class="userIntroCont">
+            <h4 class="colorBlue">
+              史冬泉 <span class="orangeColor"><i class="iconfont orangeColor">&#xe613;</i> 医师认证</span>
+            </h4>
+            <p>
+              史冬泉,男,主治医师,2006年南京大学医学院毕业,之后就职于南京大学医学院附属鼓楼医院,师从国内著名关节外科运动医学专家蒋青教授,全 美运动医学前任主席、匹兹堡大学骨科主任Freddie Fu教授、匹兹堡大学关节重建外科主任Lawrence Crossett教授及日本Top3骨关节疾病遗传学研 究专家Shiro Ikegawa教授。临床方向:成人重建外科(关节置换、关节重建成形
+            </p>
+            <ul class="mt1em">
+              <li><i class="iconfont">&#xe610;</i>未读消息:5</li>
+              <li><i class="iconfont">&#xe603;</i>未读评论:5</li>
+              <li><i class="iconfont">&#xe612;</i>未读回帖:5</li>
+              <li><i class="iconfont">&#xe611;</i>新留言:5</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="userNav mt2em">
+      <ul>
+        <li><a href="">已发的病例</a></li>
+        <li><a class="active" href="">个人信息</a></li>
+        <li><a href="">我的消息</a></li>
+        <li><a href="">我的评论</a></li>
+        <li><a href="">我的帖子</a></li>
+        <li><a href="">我的留言</a></li>
+        <li><a href="">我的关注</a></li>
+        <li><a href="">我的收藏</a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 mt2em">
+        <div class="userContLeft">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="title clearfix">
+                <span class="title-intro">基本信息</span>
+                <a onclick="save_userInfo()" class="btn-publish-art floatRight mr1em">保存</a>
+                <a onclick="edit_UserInfo()" class="btn-publish-art floatRight mr1em">编辑</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="userBaseInfo">
+              <form id="userBaseInfo" action="">
+                <div class="form-group">
+                  <div class="col-xs-6 mt1em">
+                    <label  class="control-label">用户名:</label>
+                    <p>WXL</p>
+                  </div>
+                  <div class="col-xs-6 mt1em">
+                    <div class="form-group">
+                      <label  class="control-label">昵称</label>
+                      <input type="text" class="form-control" disabled value="WXL">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-6">
+                    <div class="form-group">
+                      <label  class="control-label">性别:</label>
+                      <select class="form-control" disabled>
+                          <option value="">男</option>
+                          <option value="">女</option>
+                        </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-6">
+                    <div class="form-group">
+                      <label  class="control-label">年龄:</label>
+                      <input type="text" class="form-control"  value="18" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-12">
+                    <label for="userIntro">简介</label>
+                    <textarea disabled id="userIntro" class="form-control" rows="3">史冬泉,男,主治医师,2006年南京大学医学院毕业,之后就职于南京大学医学院附属鼓楼医院,师从国内著 名关节外科运动医学专家蒋青教授,全美运动医学前任主席、匹兹堡大学骨科主任Freddie Fu教授、匹兹堡大 学关节重建外科主任Lawrence Crossett教授及日本Top3骨关节疾病遗传学研究专家Shiro</textarea>
+                  </div>
+                </div>
+              </form>
+                <div class="col-xs-12">
+                  <div class="title mt1em clearfix">
+                    <span class="title-intro">账号管理</span>
+                    <h4>
+                      <a class="floatRight mr1em"  href="#account-manage"  data-toggle="collapse">收起》</a>
+                    </h4>
+                  </div>
+                </div>
+                <div id="account-manage" class="in">
+                  <!--修改手机-->
+                  <form action="">
+                    <div class="form-group">
+                      <div class="col-sm-6 col-xs-9 mt1em">
+                        <div class="input-group">
+                          <span class="input-group-addon">手机:</span>
+                          <input type="text" class="form-control "   name="phone"  value="13381001291">
+                        </div>
+                        <span class="help-block" style="display:none">手机格式输入错误</span>
+                      </div>
+                    </div>
+                    <div class="from-group">
+                      <div class="col-sm-6 col-xs-3 mt1em">
+                        <a class="btn btn-blue changePhoneInfo" data-toggle="collapse" href="#change_phone">修改</a>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group mt1em  collapse" id="change_phone" >
+                      <div class="col-sm-6 col-xs-9">
+                          <div class="input-group authcode">
+                            <input type="text" id="authcode" name="authcode" class="form-control" placeholder="验证号"/>
+                          <span class="input-group-btn">
+                            <input class="btn btn-blue" id="btn-message" type="button" value="免费获取验证码">
+                          </span>
+                          </div>
+                          <span class="help-block" style="display:none">验证码输入错误</span>
+                      </div>
+                      <div class="col-sm-6 col-xs-3">
+                        <a class="btn btn-white finishChangePhoneInfo" data-toggle="collapse" href="#change_phone">确认修改</a>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </form>
+                  <!--修改邮箱-->
+                  <form action="">
+                    <div class="form-group">
+                      <div class="col-sm-6 col-xs-9 mt1em">
+                        <div class="input-group">
+                          <span class="input-group-addon">邮箱:</span>
+                          <input type="email" class="form-control "   name="email"  placeholder="邮箱">
+                        </div>
+                        <span class="help-block" style="display:none">邮箱格式错误</span>
+                      </div>
+                    </div>
+                    <div class="from-group">
+                      <div class="col-sm-6 col-xs-3 mt1em">
+                        <a  class="changeEmailInfo btn btn-blue" href="#change_email" data-toggle="collapse">修改</a>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group mt1em clearfix collapse" id="change_email" >
+                      <div class="col-sm-6 col-xs-9">
+                        <input type="password" class="form-control" placeholder="请输入登录密码"/>
+                        <span class="help-block" style="display:none">密码输入错误</span>
+                      </div>
+                      <div class="col-sm-6 col-xs-3">
+                        <a class="btn btn-white finishChangeEmailInfo" data-toggle="collapse" href="#change_email">确认修改</a>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </form>
+                  <!--修改密码-->
+                  <form action="">
+                    <div class="form-group">
+                      <div class="col-sm-6 col-xs-9 mt1em">
+                        <div class="input-group">
+                          <span class="input-group-addon">密码:</span>
+                          <input type="password" class="form-control" value="******" name="password">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="from-group">
+                      <div class="col-sm-6 col-xs-3 mt1em">
+                        <a  class="changePasswordInfo btn btn-blue" href="#change_password" data-toggle="collapse">修改</a>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group collapse"  id="change_password" >
+                      <div class="col-sm-6 col-xs-9 mt1em">
+                        <input type="password" class="form-control" placeholder="请输入旧密码"/>
+                        <span class="help-block" style="display:none">密码长度为6-12位数字</span>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="col-sm-6 col-xs-9 mt1em">
+                        <input type="password" class="form-control" placeholder="请输入新密码"/>
+                        <span class="help-block" style="display:none">密码长度为6-12位数字</span>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="col-sm-6 col-xs-9 mt1em">
+                        <input type="password" class="form-control" placeholder="请再次确认密码"/>
+                        <span class="help-block" style="display:none">密码长度为6-12位数字</span>
+                      </div>
+                      <div class="col-sm-6 col-xs-3 mt1em">
+                        <a class="btn btn-white finishChangePasswordInfo" data-toggle="collapse" href="#change_password">确认修改</a>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </form>
+
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 mt2em">
+        <div class="userContRight">
+          <h4 class="colorBlue">医师认证</h4>
+
+          <form action="">
+            <div class="form-group">
+              <label  class="control-label">真实姓名:</label>
+              <input type="text" class="form-control"  value="WXL">
+            </div>
+            <div class="form-group">
+              <label  class="control-label mt1em">所在医院:</label>
+              <select class="form-control" name="">
+                <option value="">北京</option>
+              </select>
+              <select class="form-control mt1em" name="">
+                <option value="">北京市</option>
+              </select>
+              <select class="form-control mt1em" name="">
+                <option value="">古今中外</option>
+              </select>
+            </div>
+            <div class="form-group">
+            <label  class="control-label  mt1em">职称:</label>
+            <select class="form-control mt1em" name="">
+              <option value="">骨科医生</option>
+            </select>
+          </div>
+            <div class="form-group">
+              <label  class="control-label mt1em">学历:</label>
+              <select class="form-control mt1em" name="">
+                <option value="">本科</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label  class="control-label mt1em">认证方式:</label>
+              <select class="form-control mt1em" name="">
+                <option value="">身份证</option>
+                <option value="">医师执照</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label  class="control-label mt1em">证件照片:</label>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                <img class="img-responsive" src="../images/article/300200.png" alt=""/>
+              </div>
+              <div class="col-xs-6">
+                <img class="img-responsive" src="../images/article/300200.png" alt=""/>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer bgcolorWhite clearfix">
+  <div class="bottom-box">
+    <div class="bot-box1">
+      <div class="container">
+        <ul class="bottomNav">
+          <li><a href="">联系我们</a></li>
+          <li><a href="">广告服务</a></li>
+          <li><a href="">加入团队</a></li>
+          <li><a href="">意见反馈</a></li>
+          <li><a href="">隐私声明</a></li>
+          <li><a href="">关于我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bot-box2 text-center">
+      <p class="colorlightBlack">Copyright © 2000-2015 DXY All Rights Reserved.
+      <p class="colorlightBlack">浙B2-20070219(含BBS) (浙)-经营性-2012-0008 浙卫网审[2014] 40号</p>
+      <p class="colorlightBlack">本网站用字经北京北大方正电子有限公司授权许可</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="../../bower_components/modernizr/modernizr.js"></script>
+<script src="../../bower_components/jquery/dist/jquery.js"></script>
+<script src="../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+<script src="../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+<script src="../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+<script src="../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+<script src="../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+<script src="../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+<script src="../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="../../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<script src="../scripts/jquery.touchslider.js"></script>
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="../scripts/main.js"></script>
+<script type="text/javascript">
+  var wait=60;
+  function time(o) {
+    if (wait == 0) {
+      o.removeAttribute("disabled");
+      o.value="免费获取验证码";
+      wait = 60;
+    } else { // www.jbxue.com
+      o.setAttribute("disabled", true);
+      o.value="重新发送(" + wait + ")";
+      wait--;
+      console.log(wait);
+      setTimeout(function() {
+          time(o)
+        },
+        1000)
+    }
+  }
+  document.getElementById("btn-message").onclick=function(){time(this);}
+</script>
+<!-- endbuild -->
+</body>
+</html>

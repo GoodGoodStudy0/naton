@@ -1,0 +1,164 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-sass',
+1 verbose cli   '-save-dev' ]
+2 info using npm@2.2.0
+3 info using node@v0.10.32
+4 warn package.json natowebapp@ No description
+5 warn package.json natowebapp@ No repository field.
+6 warn package.json natowebapp@ No README data
+7 silly cache add args [ 'grunt-sass', null ]
+8 verbose cache add spec grunt-sass
+9 silly cache add parsed spec { raw: 'grunt-sass',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'grunt-sass',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 verbose addNamed grunt-sass@*
+11 silly addNamed semver.valid null
+12 silly addNamed semver.validRange *
+13 silly addNameRange { name: 'grunt-sass', range: '*', hasData: false }
+14 silly mapToRegistry name grunt-sass
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/grunt-sass
+18 verbose addNameRange registry:https://registry.npmjs.org/grunt-sass not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/grunt-sass
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 14:17:58
+22 verbose request id 55c2821a042de553
+23 verbose etag "BD00ZX0WE9L7600FAFDZPXY49"
+24 http request GET https://registry.npmjs.org/grunt-sass
+25 http 200 https://registry.npmjs.org/grunt-sass
+26 silly get cb [ 200,
+26 silly get   { date: 'Wed, 01 Apr 2015 06:17:59 GMT',
+26 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly get     etag: '"7HVHM2UJEZRAKI07QG14T4PUO"',
+26 silly get     'content-type': 'application/json',
+26 silly get     'cache-control': 'max-age=60',
+26 silly get     'content-length': '40290',
+26 silly get     'accept-ranges': 'bytes',
+26 silly get     via: '1.1 varnish',
+26 silly get     age: '0',
+26 silly get     'x-served-by': 'cache-nrt6126-NRT',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '1',
+26 silly get     'x-timer': 'S1427869078.680976,VS0,VE674',
+26 silly get     vary: 'Accept',
+26 silly get     'keep-alive': 'timeout=10, max=50',
+26 silly get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'grunt-sass', range: '*', hasData: true }
+28 silly addNameRange versions [ 'grunt-sass',
+28 silly addNameRange   [ '0.1.0',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.2.3',
+28 silly addNameRange     '0.2.4',
+28 silly addNameRange     '0.2.5',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.4.1',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.6.0',
+28 silly addNameRange     '0.6.1',
+28 silly addNameRange     '0.7.0',
+28 silly addNameRange     '0.8.0',
+28 silly addNameRange     '0.8.1',
+28 silly addNameRange     '0.9.0',
+28 silly addNameRange     '0.10.0',
+28 silly addNameRange     '0.11.0',
+28 silly addNameRange     '0.12.0',
+28 silly addNameRange     '0.12.1',
+28 silly addNameRange     '0.13.0',
+28 silly addNameRange     '0.13.1',
+28 silly addNameRange     '0.14.0',
+28 silly addNameRange     '0.14.1',
+28 silly addNameRange     '0.14.2',
+28 silly addNameRange     '0.15.0',
+28 silly addNameRange     '0.16.0',
+28 silly addNameRange     '0.16.1',
+28 silly addNameRange     '0.17.0',
+28 silly addNameRange     '0.18.0',
+28 silly addNameRange     '0.18.1' ] ]
+29 verbose addNamed grunt-sass@0.18.1
+30 silly addNamed semver.valid 0.18.1
+31 silly addNamed semver.validRange 0.18.1
+32 silly cache afterAdd grunt-sass@0.18.1
+33 verbose afterAdd /Users/pursuer/.npm/grunt-sass/0.18.1/package/package.json not in flight; writing
+34 verbose afterAdd /Users/pursuer/.npm/grunt-sass/0.18.1/package/package.json written
+35 silly install resolved [ { name: 'grunt-sass',
+35 silly install resolved     version: '0.18.1',
+35 silly install resolved     description: 'Compile Sass to CSS using node-sass',
+35 silly install resolved     license: 'MIT',
+35 silly install resolved     repository:
+35 silly install resolved      { type: 'git',
+35 silly install resolved        url: 'https://github.com/sindresorhus/grunt-sass' },
+35 silly install resolved     author:
+35 silly install resolved      { name: 'Sindre Sorhus',
+35 silly install resolved        email: 'sindresorhus@gmail.com',
+35 silly install resolved        url: 'http://sindresorhus.com' },
+35 silly install resolved     engines: { node: '>=0.10.0' },
+35 silly install resolved     scripts: { test: 'grunt' },
+35 silly install resolved     files: [ 'tasks' ],
+35 silly install resolved     keywords:
+35 silly install resolved      [ 'gruntplugin',
+35 silly install resolved        'css',
+35 silly install resolved        'sass',
+35 silly install resolved        'scss',
+35 silly install resolved        'style',
+35 silly install resolved        'compile',
+35 silly install resolved        'preprocess',
+35 silly install resolved        'compile',
+35 silly install resolved        'libsass' ],
+35 silly install resolved     dependencies:
+35 silly install resolved      { 'each-async': '^1.0.0',
+35 silly install resolved        'node-sass': '^2.0.1',
+35 silly install resolved        'object-assign': '^2.0.0' },
+35 silly install resolved     devDependencies:
+35 silly install resolved      { grunt: '^0.4.5',
+35 silly install resolved        'grunt-cli': '^0.1.13',
+35 silly install resolved        'grunt-contrib-clean': '^0.6.0',
+35 silly install resolved        'grunt-contrib-nodeunit': '^0.4.1' },
+35 silly install resolved     gitHead: '5b0c8a231574f043e16c3d2c2e7c6b84bc1796c3',
+35 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/grunt-sass/issues' },
+35 silly install resolved     homepage: 'https://github.com/sindresorhus/grunt-sass',
+35 silly install resolved     _id: 'grunt-sass@0.18.1',
+35 silly install resolved     _shasum: 'afc8519fdc79c102cf20a81385e1f713d8c67713',
+35 silly install resolved     _from: 'grunt-sass@*',
+35 silly install resolved     _npmVersion: '1.4.28',
+35 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+35 silly install resolved     maintainers: [ [Object] ],
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: 'afc8519fdc79c102cf20a81385e1f713d8c67713',
+35 silly install resolved        tarball: 'http://registry.npmjs.org/grunt-sass/-/grunt-sass-0.18.1.tgz' },
+35 silly install resolved     directories: {},
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt-sass/-/grunt-sass-0.18.1.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install grunt-sass@0.18.1 into /Users/pursuer/project/naton
+37 info installOne grunt-sass@0.18.1
+38 verbose installOne of grunt-sass to /Users/pursuer/project/naton not in flight; installing
+39 warn locking Error: EACCES, open '/Users/pursuer/.npm/_locks/grunt-sass-618bbf085908307e.lock'
+39 warn locking  /Users/pursuer/.npm/_locks/grunt-sass-618bbf085908307e.lock failed { [Error: EACCES, open '/Users/pursuer/.npm/_locks/grunt-sass-618bbf085908307e.lock']
+39 warn locking   errno: 3,
+39 warn locking   code: 'EACCES',
+39 warn locking   path: '/Users/pursuer/.npm/_locks/grunt-sass-618bbf085908307e.lock' }
+40 verbose stack Error: Attempt to unlock /Users/pursuer/project/naton/node_modules/grunt-sass, which hasn't been locked
+40 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
+40 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:929:5)
+40 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:933:20
+40 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
+40 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+40 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+40 verbose stack     at Object.oncomplete (fs.js:107:15)
+41 verbose cwd /Users/pursuer/project/naton
+42 error Darwin 13.4.0
+43 error argv "node" "/usr/local/bin/npm" "install" "grunt-sass" "-save-dev"
+44 error node v0.10.32
+45 error npm  v2.2.0
+46 error Attempt to unlock /Users/pursuer/project/naton/node_modules/grunt-sass, which hasn't been locked
+47 error If you need help, you may report this error at:
+47 error     <http://github.com/npm/npm/issues>
+48 verbose exit [ 1, true ]
