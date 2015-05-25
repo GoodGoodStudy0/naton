@@ -4774,7 +4774,7 @@ button.close {
   border-top: 1px solid #C9CACA; }
 
 body {
-  font-family: "Arial","STXihei","Microsoft YaHei";
+  font-family: "Arial","STXihei";
   line-height: 1.5em;
   color: #222427;
   background-color: #EEEEEF; }
@@ -4797,6 +4797,9 @@ a {
 a:focus, a:hover {
   outline: none;
   text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
 
 h2 {
   font-size: 1.5em;
@@ -4904,6 +4907,9 @@ ul {
     padding: 0 0.2em; }
   .artBox .art-commt .col-xs-3 {
     padding: 0; }
+  .artBox .artCont {
+    height: 8.5em;
+    word-break: break-all; }
   @media (min-width: 768px) {
     .artBox .artCont {
       position: absolute;
@@ -4934,7 +4940,6 @@ ul {
     .artBox .artCont {
       background-color: #fff;
       padding: 1em;
-      max-height: 100%;
       width: 100%; }
       .artBox .artCont .art-info {
         padding: 0.5em 0;
@@ -5096,6 +5101,12 @@ ul {
     padding: 1em; }
     .newNav .art-label .more {
       color: #14649e; }
+    .newNav .art-label a {
+      color: #535454; }
+      .newNav .art-label a:hover {
+        color: #14649e; }
+    .newNav .art-label .active {
+      color: #14649e; }
 
 .title {
   border-bottom: 1px solid #C9CACA; }
@@ -5112,7 +5123,7 @@ ul {
 
 .rel-art-box .art-detail {
   word-break: break-all;
-  height: 8em; }
+  height: 6em; }
 .rel-art-box .col-xs-4, .rel-art-box .col-xs-8 {
   padding-right: 0; }
 .rel-art-box .col-xs-8 {
@@ -6156,6 +6167,9 @@ i {
   margin: 0;
   font-size: 2em; }
 
+.pt1 h1 {
+  font-size: 2.5em; }
+
 .pt3 .touming3 h1 {
   color: #fff;
   margin: 0;
@@ -6165,7 +6179,7 @@ i {
   padding: 0; }
 
 .pt1 .home-comment {
-  padding-top: 35%; }
+  padding-top: 20%; }
 
 .pt2 .home-comment {
   padding-top: 20%; }
@@ -6177,7 +6191,7 @@ i {
   padding-top: 20%; }
 
 .pt5 .home-comment {
-  padding-top: 40%; }
+  padding-top: 20%; }
 
 .st-1 .home-comment, .st-2 .home-comment, .st-3 .home-comment {
   padding-top: 20%; }
@@ -6200,7 +6214,7 @@ i {
   color: #818080;
   font-size: 1em;
   word-break: break-all;
-  height: 8em; }
+  height: 5em; }
 
 .video_list {
   list-style: none;
@@ -6550,5 +6564,20 @@ i {
   background-color: #009B4C;
   padding: 25px;
   border-radius: 50px; }
+
+.forgetPasswordBox {
+  background-color: #fff; }
+  @media (min-width: 992px) {
+    .forgetPasswordBox {
+      padding: 0 8em; } }
+
+.date_1 {
+  width: 100%;
+  list-style: none; }
+  .date_1 li {
+    margin-bottom: 1em;
+    border-bottom: 1px dashed #C9CACA; }
+  .date_1 h1 {
+    margin-bottom: 0.3em; }
 
 /*# sourceMappingURL=main.css.map */

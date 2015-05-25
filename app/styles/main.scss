@@ -82,7 +82,7 @@ $purple:#B04B87;
 .blackHr{border-top:1px solid $lightmoreGray;}
 
 //页面基础设置
-body{font-family: "Arial","STXihei","Microsoft YaHei"; line-height:1.5em;color:$deepblack;background-color: $lightgray}
+body{font-family: "Arial","STXihei"; line-height:1.5em;color:$deepblack;background-color: $lightgray}
 *{margin: 0; padding: 0;
   -webkit-transition: 1s time;
   -moz-transition: 1s time;
@@ -91,7 +91,8 @@ body{font-family: "Arial","STXihei","Microsoft YaHei"; line-height:1.5em;color:$
   transition: 1s time;}
 a{background:none; outline: none;border: none;color: $blue;}
 a:focus,a:hover{ outline:none;text-decoration: none;}
-h2{font-size: 1.5em;color: $deepblack;  }
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+h2{font-size: 1.5em;color: $deepblack;}
 h3{margin-top:0.3em;color: $deepblack;}
 h4{font-size: 1.3em;color: $deepblack;}
 p{margin-bottom: 0;color: $lightblack}
@@ -153,6 +154,7 @@ ul{list-style: inside;}
   .art-commt{.col-xs-4{padding:0 0.2em;}
     .col-xs-3{padding: 0;}
   }
+  .artCont{height: 8.5em;word-break: break-all;}
   @media (min-width: 768px) {
     .artCont{position:absolute;z-index:10;bottom:0;max-height: 100%;width: 100%;background-color:$white;padding:1em;
       .art-info{padding: 0.5em 1em;
@@ -164,7 +166,7 @@ ul{list-style: inside;}
     }
   }
   @media (max-width: 767px) {
-    .artCont{background-color:$white;padding:1em;max-height: 100%;width: 100%;
+    .artCont{background-color:$white;padding:1em;width: 100%;
       .art-info{padding: 0.5em 0;
         background-color: $white;
         .author{float: left;color: $lightblack;}
@@ -285,6 +287,8 @@ ul{list-style: inside;}
   }
   .art-label{background-color: $white;padding: 1em;
     .more{color: $blue;}
+    a{color: $lightblack;&:hover{color: $themeColor;}}
+    .active{color: $themeColor;}
   }
 }
 .title{border-bottom:1px solid $lightmoreGray;
@@ -294,7 +298,7 @@ ul{list-style: inside;}
 .rel-art-box{
   .art-detail{
     word-break:break-all;
-    height:8em;
+    height:6em;
   }
   .col-xs-4,.col-xs-8{padding-right: 0;}
   .col-xs-8{padding-left:1em;}
@@ -1061,6 +1065,9 @@ i{color: $lightblack;}
 .st-3 .touming3{
   h1{color: #fff;margin: 0;font-size: 2em;}
 }
+.pt1{
+  h1{font-size: 2.5em;}
+}
 .pt3 .touming3{
   h1{color: #fff;margin: 0;font-size: 1.5em;}
   .home-comment{
@@ -1070,7 +1077,7 @@ i{color: $lightblack;}
   }
 }
 .pt1{
-  .home-comment{padding-top: 35%}
+  .home-comment{padding-top: 20%}
 }
 .pt2{
   .home-comment{padding-top: 20%;}
@@ -1082,7 +1089,7 @@ i{color: $lightblack;}
   .home-comment{padding-top: 20%;}
 }
 .pt5{
-  .home-comment{padding-top: 40%}
+  .home-comment{padding-top: 20%}
 }
 .st-1,.st-2,.st-3{
   .home-comment{padding-top: 20%}
@@ -1102,7 +1109,7 @@ i{color: $lightblack;}
 .text-cont{
   padding-top:2em;color: $gray;font-size: 1em;
   word-break:break-all;
-    height:8em;
+    height:5em;
 }
 .video_list{list-style: none;
   li{
@@ -1337,3 +1344,21 @@ i{color: $lightblack;}
    padding: 25px;
    border-radius: 50px;
  }
+.forgetPasswordBox{
+  background-color: $white;
+  @media (min-width: 992px) {
+    padding: 0 8em;
+  };
+}
+.date_1 {
+  width: 100%;
+  list-style: none;
+  li {
+    margin-bottom: 1em;
+    border-bottom: 1px dashed $lightmoreGray;
+  }
+  h1 {
+    margin-bottom: 0.3em
+
+  }
+}

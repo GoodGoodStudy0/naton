@@ -57,48 +57,25 @@ function edit_UserInfo(){
   $('#userBaseInfo input').removeAttr('disabled');
   $('#userBaseInfo select').removeAttr('disabled');
   $('#userBaseInfo textarea').removeAttr('disabled');
-}
+};
 function save_userInfo(){
   $('#userBaseInfo input').attr('disabled','disabled');
   $('#userBaseInfo select').attr('disabled','disabled');
   $('#userBaseInfo textarea').attr('disabled','disabled');
-}
-$(".text-cont").each(function(i){
-  var divH = $(this).height();
-  var $p = $("p", $(this)).eq(0);
-  while ($p.outerHeight() > divH) {
-    $p.text($p.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));
-  }
-});
-$(".art-detail").each(function(i){
-  var divH = $(this).height()-60;
-  var $p = $("p", $(this)).eq(0);
-  while ($p.outerHeight() > divH) {
-    $p.text($p.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));
-  };
-  var $h4 =$("h4", $(this)).eq(0);
-  while ($h4.outerHeight() > 40) {
-    $h4.text($h4.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));
-  };
-});
+};
+
+$(".text-cont p").rowsControlText();
+$(".art-detail p").rowsControlText();
+$(".art-detail h4").rowsControlTitle();
+$('.artCont p').rowsControlText();
+$('.artCont h4').rowsControlTitle();
 $(window).resize(function(){
-  $(".text-cont").each(function(i){
-    var divH = $(this).height();
-    var $p = $("p", $(this)).eq(0);
-    while ($p.outerHeight() > divH) {
-      $p.text($p.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));
-    }
-  });
-  $(".art-detail").each(function(i){
-    var divH = $(this).height()-60;
-    var $p = $("p", $(this)).eq(0);
-    while ($p.outerHeight() > divH) {
-      $p.text($p.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));
-    };
-    var $h4 =$("h4", $(this)).eq(0);
-    while ($h4.outerHeight() > 40) {
-      $h4.text($h4.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));
-    };
-  });
-})
+  $(".text-cont p").rowsControlText();
+  $(".art-detail p").rowsControlText();
+  $(".art-detail h4").rowsControlTitle();
+  $('.artCont p').rowsControlText();
+  $('.artCont h4').rowsControlTitle();
+});
+
+
 

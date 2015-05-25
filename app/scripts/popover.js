@@ -52,7 +52,8 @@ window.alert = function(str,type)
       $('#bs-promptBox').modal('show');
       time();
     }
-  var wait=1;
+    window.location.reload();
+    var wait=1;
   function time() {
     if (wait == 0) {
       $('#bs-promptBox').modal('hide')
